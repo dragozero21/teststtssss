@@ -11,5 +11,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Say Hi
       run: |
-        echo "Issue title: ${{ github.event.issue.title }}"
-        echo "Issue body: ${{ github.event.issue.body }}"
+        echo "Issue title: ${{ github.event.pull_request.title }}"
